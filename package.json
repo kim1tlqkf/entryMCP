@@ -1,0 +1,17 @@
+{
+  "name": "personal-entry-mcp",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "version": "0.2.0",
+  "scripts": {
+    "start": "node server_bridge.mjs",
+    "check": "node --check server_bridge.mjs && node --check authoring-tools.mjs && node --check bridge_runtime.mjs && node --check extension/background.js && node --check extension/authoring.js && node --check project.mjs && node --check pair.mjs && node authoring_check.mjs",
+    "pair": "node pair.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.0.0",
+    "ws": "8.21.3",
+    "zod": "4.6.5"
+  }
+}

@@ -1,0 +1,4 @@
+pairing-secret
+extension/pairing.js
+node_modules/
+*.ent
